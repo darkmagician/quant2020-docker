@@ -1,7 +1,5 @@
 FROM continuumio/anaconda3:2020.02
 
-run pip install jqdatasdk
-
 
 # TA-Lib
 RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \

@@ -2,7 +2,8 @@ FROM continuumio/anaconda3:2020.02
 
 
 # TA-Lib
-RUN apt install build-essential wget -y && \
+RUN apt-get update -y &&\
+  apt install build-essential wget -y && \
   wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
   tar -xvzf ta-lib-0.4.0-src.tar.gz && \
   cd ta-lib/ && \

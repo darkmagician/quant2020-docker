@@ -17,3 +17,6 @@ RUN pip install -r /tmp/requirements.txt
 
 ENV PYTHONIOENCODING=UTF-8
 ENV TZ=Asia/Shanghai
+
+RUN mkdir /app
+WORKDIR /app

@@ -9,8 +9,8 @@ RUN apt-get update -y &&\
   cd ta-lib/ && \
   ./configure --prefix=/usr && \
   make && \
-  make install  &&\
-  rm -R ta-lib ta-lib-0.4.0-src.tar.gz
+  make install  && \
+  cd .. && rm -R ta-lib ta-lib-0.4.0-src.tar.gz && rm -rf /var/lib/apt/lists/*
 
 ADD requirements.txt /tmp/
 RUN pip install -r /tmp/requirements.txt

@@ -3,7 +3,7 @@ FROM continuumio/anaconda3:2020.02
 
 # TA-Lib
 RUN apt-get update -y &&\
-  apt install build-essential wget -y && \
+  apt install build-essential wget nfs-common -y && \
   wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
   tar -xvzf ta-lib-0.4.0-src.tar.gz && \
   cd ta-lib/ && \

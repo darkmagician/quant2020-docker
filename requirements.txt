@@ -1,3 +1,4 @@
 jqdatasdk
 ta-lib
 webdavclient3
+easyquotation
